@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.test.hello.myhelloworld.LoginActivity">
+
+    <TextView android:text="Clean My Area" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:id="@+id/textView9"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ff000000"
+        android:textStyle="bold"
+        android:textSize="50px"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtPh"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Mobile number" />
+
+    <ImageView
+        android:layout_width="105px"
+        android:layout_height="105px"
+        android:id="@+id/imgG"
+        android:src="@drawable/fb"
+        android:onClick="onClickFB"
+        android:layout_below="@+id/edtPh"
+        android:layout_toLeftOf="@+id/btnLogin"
+        android:layout_toStartOf="@+id/btnLogin"
+        android:layout_marginTop="10px" />
+
+    <ImageView
+        android:layout_width="120px"
+        android:layout_height="120px"
+        android:id="@+id/imgGplus"
+        android:src="@drawable/gplus"
+        android:onClick="onClickGoogle"
+        android:layout_below="@+id/edtPh"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="130px"
+        android:layout_height="130px"
+        android:id="@+id/imgUs"
+        android:src="@drawable/broom"
+        android:onClick="onClickUs"
+        android:layout_alignBottom="@+id/imgGplus"
+        android:layout_toRightOf="@+id/textView9"
+        android:layout_toEndOf="@+id/textView9"
+        android:layout_marginBottom="-10px" />
+
+    <Button
+        android:layout_width="350px"
+        android:layout_height="120px"
+        android:text="Start cleaning"
+        android:id="@+id/btnLogin"
+        android:layout_marginTop="46dp"
+        android:textColor="#ff080909"
+        android:textStyle="bold"
+        android:layout_below="@+id/imgUs"
+        android:layout_centerHorizontal="true"
+        android:textSize="30px"
+        android:onClick="gotoMaps" />
+
+</RelativeLayout>
